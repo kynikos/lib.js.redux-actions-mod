@@ -23,12 +23,18 @@ combineActions = (actions..., reducer) ->
     return {"#{redux_actions.combineActions(actions...)}": reducer}
 
 
+handleAction = (defaultState, type, reducer) ->
+    return redux_actions.handleAction(type, reducer, defaultState)
+
+
 handleActions = (defaultState, reducerMap) ->
     return redux_actions.handleActions(reducerMap, defaultState)
 
 
 module.exports = {
+    createAction: redux_actions.createAction
     createActions: redux_actions.createActions
     combineActions
+    handleAction
     handleActions
 }
