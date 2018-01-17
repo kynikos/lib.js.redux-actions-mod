@@ -19,6 +19,16 @@
 redux_actions = require('redux-actions')
 
 
+createActionsWithMeta = (meta, actionMap, identityActions...) ->
+    actionMapWithMeta = {}
+    for type, payloadCreator of actionMap
+        actionMapWithMeta[type] = [
+            payloadCreator
+            -> meta
+        ]
+    return redux_actions.createActions(actionMapWithMeta, identityActions...)
+
+
 combineActions = (actions..., reducer) ->
     return {"#{redux_actions.combineActions(actions...)}": reducer}
 
@@ -34,6 +44,7 @@ handleActions = (defaultState, reducerMap) ->
 module.exports = {
     createAction: redux_actions.createAction
     createActions: redux_actions.createActions
+    createActionsWithMeta
     combineActions
     handleAction
     handleActions
