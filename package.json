@@ -1,0 +1,23 @@
+{
+  "name": "@kynikos/redux-actions-mod",
+  "version": "1.0.0",
+  "author": "Dario Giovannetti",
+  "description": "redux-actions wrapper.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kynikos/lib.js.redux-actions-mod.git"
+  },
+  "keywords": [
+    "redux redux-actions"
+  ],
+  "scripts": {
+    "compile": "coffee --compile index.coffee"
+  },
+  "dependencies": {
+    "redux-actions": "^2.2.1"
+  },
+  "devDependencies": {
+    "coffeescript": "^2.1.1"
+  }
+}
