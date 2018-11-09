@@ -12,7 +12,7 @@
     "redux redux-actions"
   ],
   "scripts": {
-    "compile": "coffee --compile --transpile index.coffee"
+    "compile": "./node_modules/.bin/coffee --compile --transpile index.coffee"
   },
   "dependencies": {
     "redux-actions": "^2.2.1"
