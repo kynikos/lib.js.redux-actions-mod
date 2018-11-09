@@ -47,7 +47,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
     var i, reducer, ref;
     ref = actions, actions = 2 <= ref.length ? slice.call(ref, 0, i = ref.length - 1) : (i = 0, []), reducer = ref[i++];
-    return _defineProperty({}, '' + (_redux_actions2 = redux_actions).combineActions.apply(_redux_actions2, _toConsumableArray(actions)), reducer);
+    return _defineProperty({}, (_redux_actions2 = redux_actions).combineActions.apply(_redux_actions2, _toConsumableArray(actions)), reducer);
   };
 
   handleAction = function handleAction(defaultState, type, reducer) {

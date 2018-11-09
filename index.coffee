@@ -17,7 +17,7 @@ createActionsWithMeta = (meta, actionMap, identityActions...) ->
 
 
 combineActions = (actions..., reducer) ->
-    return {"#{redux_actions.combineActions(actions...)}": reducer}
+    return { [redux_actions.combineActions(actions...)]: reducer }
 
 
 handleAction = (defaultState, type, reducer) ->
