@@ -1,6 +1,6 @@
 {
   "name": "@kynikos/redux-actions-mod",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Dario Giovannetti",
   "description": "redux-actions wrapper.",
   "license": "MIT",
