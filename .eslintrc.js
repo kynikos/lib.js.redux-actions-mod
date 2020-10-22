@@ -6,6 +6,7 @@ module.exports = {
   },
   'env': {
     'es6': true,
+    'es2017': true,
   },
   'rules': {
     'array-bracket-newline': ['error', 'consistent'],
