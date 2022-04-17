@@ -12,7 +12,7 @@
     "redux redux-actions"
   ],
   "dependencies": {
-    "redux-actions": "2.x"
+    "redux-actions": "^2.0.0"
   },
   "devDependencies": {
     "eslint": "^7.11.0"
